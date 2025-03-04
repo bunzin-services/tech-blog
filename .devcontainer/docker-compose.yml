@@ -1,0 +1,11 @@
+name: tech-blog
+services:
+  tech-blog:
+    container_name: tech-blog
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ../:/workspace/tech-blog
+    stdin_open: true
+    tty: true
